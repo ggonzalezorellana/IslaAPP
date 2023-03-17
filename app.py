@@ -13,7 +13,10 @@ def build_teams():
     player_list = []
     for player in players:
         player_dict = {
-            'name': player[0]
+            'name': player[0],
+            'gender': player[1],
+            'quality': player[2],
+            'will_play': bool(player[3])
         }
         player_list.append(player_dict)
 
